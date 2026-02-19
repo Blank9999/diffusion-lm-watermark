@@ -72,13 +72,12 @@ We provide bash scripts in `scripts/bash` to reproduce our main experiments and 
 ## Citation
 
 ```
-@misc{gloaguen2025watermarkingdiffusionlanguagemodels,
-      title={Watermarking Diffusion Language Models}, 
-      author={Thibaud Gloaguen and Robin Staab and Nikola Jovanović and Martin Vechev},
-      year={2025},
-      eprint={2509.24368},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2509.24368}, 
+@inproceedings{
+  gloaguen2026watermarking,
+  title={Watermarking Diffusion Language Models},
+  author={Thibaud Gloaguen and Robin Staab and Nikola Jovanovi{\'c} and Martin Vechev},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=3aBWTYGcaT}
 }
 ```
