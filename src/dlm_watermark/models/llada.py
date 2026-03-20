@@ -142,10 +142,10 @@ def generate(
             else:
                 raise NotImplementedError(remasking)
 
-            x0_p[:, prompt.shape[1] + (num_block + 1) * block_length :] = -np.inf
+            x0_p[:, prompt.shape[1] + (num_block + 1) * block_length :] = np.inf
 
             x0 = torch.where(mask_index, x0, x)
-            confidence = torch.where(mask_index, x0_p, -np.inf)
+            confidence = torch.where(mask_index, -x0_p, -np.inf)
 
             transfer_index = torch.zeros_like(x0, dtype=torch.bool, device=x0.device)
             for j in range(confidence.shape[0]):
