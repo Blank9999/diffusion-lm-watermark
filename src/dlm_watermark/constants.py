@@ -6,6 +6,5 @@ DTYPE_MAP = {
     "bfloat16": torch.bfloat16,
     "float32": torch.float32,
     "int8": torch.int8,
-    "int4": torch.int4,
     "uint8": torch.uint8,
 }
